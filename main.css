@@ -1,0 +1,31 @@
+
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.box {
+    height: 50%;
+    width: 50%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#heart{
+    float: left;
+}
+
+#club{
+    float: left;
+}
+
+#spade{
+    float: right;
+}
+
+#diamond{
+    float: right;
+}
+
