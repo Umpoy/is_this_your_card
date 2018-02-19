@@ -9,41 +9,43 @@
 <body>
     <div class="card">
         <div class="back"></div>
+        <div class="reveal"></div>
         <div class="front">
             <img src="https://deckofcardsapi.com/static/img/AS.png" alt="">
         </div>
-        <div class="reveal"></div>
+
     </div>
 
     <div class="container">
         <div class="box" id="heart">
-            <div id="3" class="left">3</div>
-            <div id="4" class="right">4</div>
-            <div class="right">blank</div>
-            <div id="2" class="left">2</div>
+            <div id="3" class="left suit">3</div>
+            <div id="4" class="right suit">4</div>
+            <div class="right suit">blank</div>
+            <div id="2" class="left suit">2</div>
         </div>
         <div class="box" id="spade">
-            <div id="5" class="left">5</div>
-            <div id="6" class="right">6</div>
-            <div id="7" class="right">7</div>
-            <div class="left">blank</div>
+            <div id="5" class="left suit">5</div>
+            <div id="6" class="right suit">6</div>
+            <div id="7" class="right suit">7</div>
+            <div class="left suit">blank</div>
 
         </div>
         <div class="box" id="club">
-            <div id="K" class="left">K</div>
-            <div class="right">blank</div>
-            <div id="J" class="right">J</div>
-            <div id="Q" class="left">Q</div>
+            <div id="K" class="left suit">K</div>
+            <div class="right suit">blank</div>
+            <div id="J" class="right suit">J</div>
+            <div id="Q" class="left suit">Q</div>
         </div>
         <div class="box" id="diamond">
-            <div class="left">blank</div>
-            <div id="8" class="right">8</div>
-            <div id="9" class="right">9</div>
-            <div id="10" class="left">10</div>
+            <div class="left suit">blank</div>
+            <div id="8" class="right suit">8</div>
+            <div id="9" class="right suit">9</div>
+            <div id="10" class="left suit">10</div>
         </div>
     </div>
 
     <!-- JS files -->
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
     <script type="text/javascript" src="https://cdn.rawgit.com/alexgibson/shake.js/master/shake.js"></script>
     <script src="main.js"></script>
 </body>

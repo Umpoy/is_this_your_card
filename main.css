@@ -46,6 +46,10 @@ div {
     position: absolute;
 }
 
+.hide {
+    visibility: hidden;
+}
+
 #heart{
     float: left;
 }
