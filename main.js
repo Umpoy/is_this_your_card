@@ -39,12 +39,12 @@ function render_card() {
         case '8':
         case '9':
         case '10':
-            suit = "C";
+            suit = "D";
             break;
         case 'J':
         case 'Q':
         case 'K':
-            suit = "D";
+            suit = "C";
             break;
     }
     var img = document.createElement("IMG");
