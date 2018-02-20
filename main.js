@@ -9,6 +9,9 @@ function initialize() {
 
 function assign_click_handler() {
     $('.suit').on('click', find_value)
+    $('.back').on('click', function () {
+        $(this).addClass('hide');
+    })
 }
 
 function find_value() {
@@ -20,7 +23,6 @@ function find_value() {
         render_card()
     }
     first_click = $(this).attr("id");
-    console.log(first_click)
 }
 
 function render_card() {
@@ -38,7 +40,7 @@ function render_card() {
             break;
         case '8':
         case '9':
-        case '10':
+        case '0':
             suit = "D";
             break;
         case 'J':
