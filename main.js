@@ -13,6 +13,7 @@ function assign_click_handler() {
     $('.back').on('click', function () {
         $(this).addClass('hide');
     })
+    $('.reveal').on('click', new_card)
 }
 
 function find_value() {
