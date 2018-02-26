@@ -72,7 +72,13 @@ function call_first_card_image() {
     var img = document.createElement("IMG");
     img.src = "https://deckofcardsapi.com/static/img/" + card_value_array[Math.floor(Math.random() * card_value_array.length)] + card_suits_array[Math.floor(Math.random() * card_suits_array.length)] + ".png";
     $('.front').html(img);
+}
 
+function new_card() {
+    first_click = null;
+    second_click = null;
+    call_first_card_image();
+    $('.front').removeClass('hide');
 }
 
 
