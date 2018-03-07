@@ -81,11 +81,3 @@ function new_card() {
     call_first_card_image();
     $('.front').removeClass('hide');
 }
-
-
-
-
-
-
-
-

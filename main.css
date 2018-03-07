@@ -74,3 +74,6 @@ div {
     float: right;
 }
 
+button:focus {outline:0;}
+
+
