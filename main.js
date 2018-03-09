@@ -2,7 +2,6 @@ var first_click;
 var second_click;
 $(document).ready(initialize);
 
-
 function initialize() {
     assign_click_handler();
     call_first_card_image()
