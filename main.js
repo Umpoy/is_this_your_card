@@ -4,12 +4,10 @@ $(document).ready(initialize);
 
 function initialize() {
     assign_click_handler();
-    call_first_card_image()
 }
 
 function assign_click_handler() {
     $('.suit').on('click', find_value)
-    $('.reveal').on('click', new_card)
 }
 
 function find_value() {
@@ -50,13 +48,16 @@ function render_card() {
     var img = document.createElement("IMG");
     img.src = "https://deckofcardsapi.com/static/img/" + first_click + suit + ".png";
     $('.reveal').html(img);
+    call_shake_api()
+}
+
+function call_shake_api() {
     //listen to shake event
     var shakeEvent = new Shake({ threshold: 15 });
     shakeEvent.start();
     window.addEventListener('shake', function () {
         $(".front").addClass('hide');
     }, false);
-
     //stop listening
     function stopShake() {
         shakeEvent.stop();
