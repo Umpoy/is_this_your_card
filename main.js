@@ -56,7 +56,7 @@ function call_shake_api() {
     var shakeEvent = new Shake({ threshold: 15 });
     shakeEvent.start();
     window.addEventListener('shake', function () {
-        $(".front").addClass('hide');
+        $(".back").addClass('hide');
     }, false);
     //stop listening
     function stopShake() {
