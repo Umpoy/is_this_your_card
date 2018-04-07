@@ -4,11 +4,11 @@ $(document).ready(initialize);
 
 function initialize() {
     assign_click_handler();
-    check_if_mobile();
+    alert_on_desktop();
 }
 
-function check_if_mobile() {
-    function detectmob() {
+function alert_on_desktop() {
+    function check_if_mobile() {
         if (navigator.userAgent.match(/Android/i)
             || navigator.userAgent.match(/webOS/i)
             || navigator.userAgent.match(/iPhone/i)
@@ -25,12 +25,11 @@ function check_if_mobile() {
     }
 
     setInterval(function () {
-        if (!detectmob()) {
+        if (!check_if_mobile()) {
             alert('Sorry this application only works on mobile, please close this tab');
         }
     })
 }
-
 
 function assign_click_handler() {
     $('.suit').on('click', find_value)
