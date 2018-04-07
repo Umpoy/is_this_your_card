@@ -26,7 +26,7 @@ function check_if_mobile() {
 
     setInterval(function () {
         if (!detectmob()) {
-            alert('sorry only works on moible');
+            alert('Sorry this application only works on mobile, please close this tab');
         }
     })
 }
