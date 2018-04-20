@@ -73,7 +73,11 @@ function render_card() {
     var img = document.createElement("IMG");
     img.src = "https://deckofcardsapi.com/static/img/" + first_click + suit + ".png";
     $('.reveal').html(img);
-    call_shake_api()
+    $('.reveal').on('click', function () {
+        $(this).css('visibility', 'hidden');
+    });
+    call_shake_api();
+
 }
 
 function call_shake_api() {
