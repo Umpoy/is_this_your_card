@@ -74,7 +74,7 @@ function render_card() {
     img.src = "https://deckofcardsapi.com/static/img/" + first_click + suit + ".png";
     $('.reveal').html(img);
     $('.reveal').on('click', function () {
-        $(this).html('');
+        $('body').html('');
     });
     call_shake_api();
 
