@@ -4,8 +4,8 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 div {
     height: 50%;
     width: 50%;
-    /* border: 1px solid black;
-    box-sizing: border-box; */
+    border: 1px solid black;
+    box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
@@ -74,6 +74,25 @@ div {
     float: right;
 }
 
+
+.pop_up {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1000;
+    height: 50%;
+    width: 70%;
+    padding: 17%;
+}
+
+.btn-primary {
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30%;
+}
 
 
 
