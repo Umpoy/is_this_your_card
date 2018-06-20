@@ -9,12 +9,6 @@ div {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
-
-.container {
-    height: 100vh;
-    width: 100vw;
-}
-
 .card {
     position: fixed;
     top: 50%;
@@ -50,29 +44,7 @@ div {
     visibility: hidden;
 }
 
-#heart{
-    float: left;
-}
 
-#club{
-    float: left;
-}
-
-#spade{
-    float: right;
-}
-
-#diamond{
-    float: right;
-}
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
 
 
 .pop_up {
