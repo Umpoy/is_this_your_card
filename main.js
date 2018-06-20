@@ -92,3 +92,33 @@
 //         shakeEvent.stop();
 //     }
 // }
+
+
+
+
+var card_val = $("#card_value");
+var card_suite = $("#card_suite");
+var card_front = $(".front");
+var card_back = $(".back");
+
+
+
+$(document).ready(initialize);
+
+function initialize() {
+    assign_click_handler();
+}
+
+function assign_click_handler() {
+    $("button").on('click', function () {
+        redner_to_screen();
+    })
+}
+
+function render_to_screen() {
+
+}
+// function initialize() {
+//     assign_click_handler();
+//     alert_on_desktop();
+// }

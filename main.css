@@ -17,12 +17,12 @@ div {
     transform: translate(-50%, -50%);
 }
 
-.card img {
+.card_back img {
     height: 100%;
     width: 100%;
 }
 
-.card .back {
+.card_back {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -65,6 +65,5 @@ div {
     margin-right: auto;
     margin-top: 30%;
 }
-
 
 
