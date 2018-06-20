@@ -111,11 +111,28 @@ function initialize() {
 
 function assign_click_handler() {
     $("button").on('click', function () {
-        redner_to_screen();
-    })
+        render_to_screen();
+    });
+    $(".card_back").on('click', function () {
+        $(this).addClass("hide");
+    });
 }
 
 function render_to_screen() {
+    //var img = $("img");
+    var img = document.createElement("IMG");
+    var front = img;
+    var back = img;
+    front.src = "https://deckofcardsapi.com/static/img/" + $("#card_value").val() + $("#card_suite").val() + ".png";
+    $(".card_front").html(front);
+    $('.card_back').prepend('<img id="theImg" src="https://cdn.shopify.com/s/files/1/0200/7616/products/playing-cards-bicycle-rider-back-1_1024x1024.png?v=1523371937" />')
+    //back.src = "https://cdn.shopify.com/s/files/1/0200/7616/products/playing-cards-bicycle-rider-back-1_1024x1024.png?v=1523371937";
+    // $(".card_back").html(back);
+    // $('.card').on('click', function () {
+    //     $('body').html('');
+    // });
+    // call_shake_api();
+
 
 }
 // function initialize() {

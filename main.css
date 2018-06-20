@@ -9,45 +9,37 @@ div {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
+
 .card {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    /* bring your own prefixes */
-    transform: translate(-50%, -50%);
-}
-
-.card_back img {
     height: 100%;
     width: 100%;
 }
-
-.card_back {
+.card > div{
     height: 100%;
     width: 100%;
     position: absolute;
 }
 
-.front {
+.card img {
     height: 100%;
     width: 100%;
-    position: absolute;
 }
 
-.reveal {
+
+
+
+/* .reveal {
     height: 100%;
     width: 100%;
     position: absolute;
-}
+} */
 
 .hide {
     visibility: hidden;
 }
 
-
-
-
 .pop_up {
+    background-color: grey;
     position: absolute;
     top: 40%;
     left: 50%;
