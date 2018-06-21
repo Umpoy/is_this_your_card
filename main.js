@@ -115,6 +115,7 @@ function assign_click_handler() {
     });
     $(".card_back").on('click', function () {
         $(this).addClass("hide");
+        $(".pop_up").addClass("hide");
     });
 }
 
