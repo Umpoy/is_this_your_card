@@ -125,16 +125,30 @@ function render_to_screen() {
     var back = img;
     front.src = "https://deckofcardsapi.com/static/img/" + $("#card_value").val() + $("#card_suite").val() + ".png";
     $(".card_front").html(front);
-    $('.card_back').prepend('<img id="theImg" src="https://cdn.shopify.com/s/files/1/0200/7616/products/playing-cards-bicycle-rider-back-1_1024x1024.png?v=1523371937" />')
+    $(".card_back").prepend('<img src="https://cdn.shopify.com/s/files/1/0200/7616/products/playing-cards-bicycle-rider-back-1_1024x1024.png?v=1523371937" />')
     //back.src = "https://cdn.shopify.com/s/files/1/0200/7616/products/playing-cards-bicycle-rider-back-1_1024x1024.png?v=1523371937";
     // $(".card_back").html(back);
     // $('.card').on('click', function () {
     //     $('body').html('');
     // });
-    // call_shake_api();
-
-
+    call_shake_api();
 }
+
+function call_shake_api() {
+    //listen to shake event
+    var shakeEvent = new Shake({ threshold: 15 });
+    shakeEvent.start();
+    window.addEventListener('shake', function () {
+        $(".card_back").addClass('hide');
+    }, false);
+    //stop listening
+    function stopShake() {
+        shakeEvent.stop();
+    }
+}
+
+
+
 // function initialize() {
 //     assign_click_handler();
 //     alert_on_desktop();
