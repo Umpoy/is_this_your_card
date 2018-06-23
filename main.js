@@ -4,7 +4,7 @@ $(document).ready(initialize);
 
 function initialize() {
     assign_click_handler();
-    //alert_on_desktop();
+    alert_on_desktop();
 }
 
 function alert_on_desktop() {
@@ -31,25 +31,25 @@ function alert_on_desktop() {
     }, 1);
 }
 
-
 function assign_click_handler() {
     $("button").on('click', function () {
+        $(".hide").removeClass("hide");
         $(".pop_up").addClass("hide");
         render_to_screen();
     });
     $(".card_back").on("click", function () {
         $(".card_back").addClass('hide');
     })
-    $(".card_front").on("click", function () {
-        count++;
-        if (count == 5) {
-            $(".pop_up").removeClass("hide");
-            count = 0;
-        }
-        setTimeout(function () {
-            count = 0;
-        }, 10000)
-    })
+    // $(".card_front").on("click", function () {
+    //     count++;
+    //     if (count == 5) {
+    //         $(".pop_up").removeClass("hide");
+    //         count = 0;
+    //     }
+    //     setTimeout(function () {
+    //         count = 0;
+    //     }, 10000)
+    // })
 }
 
 function render_to_screen() {
