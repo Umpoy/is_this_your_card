@@ -28,6 +28,8 @@ function find_value() {
         render_card()
     }
     first_click = $(this).attr("id");
+    console.log("first click: ", first_click);
+    console.log("second click: ", second_click)
 }
 
 function render_card() {
