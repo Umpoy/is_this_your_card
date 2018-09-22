@@ -3,8 +3,8 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 .container div {
     height: 50%;
     width: 50%;
-    border: 1px solid black;
-    box-sizing: border-box;
+    /* border: 1px solid black;
+    box-sizing: border-box; */
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
