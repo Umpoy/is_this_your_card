@@ -4,7 +4,7 @@ $(document).ready(initialize);
 
 function initialize() {
     assign_click_handler();
-    call_first_card_image();
+    //call_first_card_image();
     resize_card();
     $("div").on('click', function () {
         console.log(this);
@@ -56,9 +56,11 @@ function render_card() {
             suit = "C";
             break;
     }
+
     var img = document.createElement("IMG");
     img.src = "https://deckofcardsapi.com/static/img/" + first_click + suit + ".png";
-    $('.reveal').html(img);
+    $('.front').html(img);
+    resize_card();
     //listen to shake event
     var shakeEvent = new Shake({ threshold: 15 });
     shakeEvent.start();
@@ -72,13 +74,13 @@ function render_card() {
     }
 }
 
-function call_first_card_image() {
-    const card_value_array = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "0", "J", "Q", "K"]
-    const card_suits_array = ["H", "D", "S", "C"];
-    var img = document.createElement("IMG");
-    img.src = "https://deckofcardsapi.com/static/img/" + card_value_array[Math.floor(Math.random() * card_value_array.length)] + card_suits_array[Math.floor(Math.random() * card_suits_array.length)] + ".png";
-    $('.front').html(img);
-}
+// function call_first_card_image() {
+//     const card_value_array = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "0", "J", "Q", "K"]
+//     const card_suits_array = ["H", "D", "S", "C"];
+//     var img = document.createElement("IMG");
+//     img.src = "https://deckofcardsapi.com/static/img/" + card_value_array[Math.floor(Math.random() * card_value_array.length)] + card_suits_array[Math.floor(Math.random() * card_suits_array.length)] + ".png";
+//     $('.front').html(img);
+// }
 
 function new_card() {
     first_click = null;
