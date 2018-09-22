@@ -65,7 +65,7 @@ function render_card() {
     var shakeEvent = new Shake({ threshold: 15 });
     shakeEvent.start();
     window.addEventListener('shake', function () {
-        $(".front").addClass('hide');
+        $(".back").addClass('hide');
     }, false);
 
     //stop listening
