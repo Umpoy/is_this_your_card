@@ -33,6 +33,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 /* .front, .back {
     height: 50%;
     width: 50%;
+
     position: absolute;
 } */
 
@@ -40,14 +41,14 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     visibility: hidden;
 }
 
+
 #heart, #club, .left{
     float: left;
 }
 
 #spade, #diamond, .right {
     float: right;
+
 }
-
-
 
 

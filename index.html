@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <!--320-->
     <link rel="stylesheet" href="main.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
 </head>
 
 <body>
+
     <div class="card">
+
         <div class="front">
             <!-- <img src="https://deckofcardsapi.com/static/img/AS.png" alt=""> -->
         </div>
@@ -18,36 +22,42 @@
             <img src="http://www.murphysmagicsupplies.com/images_email/Mandolin_BACK.jpg" alt="">
             <!-- BLUE CARD BACK IMG -->
             <!-- <img src="http://images.penguinmagic.com/images/products/original/8007b.jpg" alt=""> -->
+
         </div>
+        <div class="card_back">
+
+        </div>
+    </div>
+
+
 
     </div>
 
-    <div class="container">
-        <div class="box" id="heart">
-            <div id="3" class="left suit"></div>
-            <div id="4" class="right suit"></div>
-            <div class="right"></div>
-            <div id="2" class="left suit"></div>
-        </div>
-        <div class="box" id="spade">
-            <div id="5" class="left suit"></div>
-            <div id="6" class="right suit"></div>
-            <div id="7" class="right suit"></div>
-            <div class="left"></div>
-
-        </div>
-        <div class="box" id="club">
-            <div id="K" class="left suit"></div>
-            <div class="right"></div>
-            <div id="J" class="right suit"></div>
-            <div id="Q" class="left suit"></div>
-        </div>
-        <div class="box" id="diamond">
-            <div class="left"></div>
-            <div id="8" class="right suit"></div>
-            <div id="9" class="right suit"></div>
-            <div id="0" class="left suit"></div>
-        </div>
+    <div class="pop_up">
+        Select the card you would like to use:
+        <select name="value" id="card_value">
+            <option value="A">A</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="0">10</option>
+            <option value="J">J</option>
+            <option value="Q">Q</option>
+            <option value="K">K</option>
+        </select>
+        of
+        <select name="suite" id="card_suite">
+            <option value="H">Hearts</option>
+            <option value="S">Spades</option>
+            <option value="D">Diamonds</option>
+            <option value="C">Clubs</option>
+        </select>
+        <button class="btn btn-primary">Go ></button>
     </div>
 
     <!-- JS files -->
