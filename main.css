@@ -1,7 +1,7 @@
 
 html, body {margin: 0; height: 100%; overflow: hidden}
 
-div {
+.container div {
     height: 50%;
     width: 50%;
     border: 1px solid black;
@@ -10,27 +10,30 @@ div {
     -webkit-box-sizing: border-box;
 }
 
-.card {
-    height: 100%;
-    width: 100%;
+.container {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
 }
-.card > div{
-    height: 100%;
-    width: 100%;
+
+
+.card {
+    height: 50%;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     position: absolute;
 }
 
-.card img {
-    height: 100%;
-    width: 100%;
+.card div {
+    position: absolute;
 }
 
+/* .front, .back {
+    height: 50%;
+    width: 50%;
 
-
-
-/* .reveal {
-    height: 100%;
-    width: 100%;
     position: absolute;
 } */
 
@@ -38,24 +41,14 @@ div {
     visibility: hidden;
 }
 
-.pop_up {
-    background-color: grey;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 1000;
-    height: 50%;
-    width: 70%;
-    padding: 17%;
+
+#heart, #club, .left{
+    float: left;
 }
 
-.btn-primary {
-    display: block !important;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30%;
+#spade, #diamond, .right {
+    float: right;
+
 }
 
 

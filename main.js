@@ -5,6 +5,11 @@ $(document).ready(initialize);
 
 function initialize() {
     assign_click_handler();
+    call_first_card_image();
+    resize_card();
+    $("div").on('click', function () {
+        console.log(this);
+    })
     alert_on_desktop();
 }
 
@@ -38,11 +43,10 @@ function assign_click_handler() {
             $(".card_back").addClass('hide');
         })
     }
-    $("button").on('click', function () {
-        $(".hide").removeClass("hide");
-        $(".pop_up").addClass("hide");
-        render_to_screen();
-    });
+    first_click = $(this).attr("id");
+    console.log("first click: ", first_click);
+    console.log("second click: ", second_click)
+
 }
 
 function render_to_screen() {
@@ -72,3 +76,35 @@ function call_shake_api() {
         shakeEvent.stop();
     }
 }
+
+function call_first_card_image() {
+    const card_value_array = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "0", "J", "Q", "K"]
+    const card_suits_array = ["H", "D", "S", "C"];
+    var img = document.createElement("IMG");
+    img.src = "https://deckofcardsapi.com/static/img/" + card_value_array[Math.floor(Math.random() * card_value_array.length)] + card_suits_array[Math.floor(Math.random() * card_suits_array.length)] + ".png";
+    $('.front').html(img);
+}
+
+function new_card() {
+    first_click = null;
+    second_click = null;
+    call_first_card_image();
+    $('.front').removeClass('hide');
+}
+
+function resize_card() {
+    $(".front").css({
+        "width": $('.card').width(),
+        "height": $('.card').height()
+    });
+    $(".back").css({
+        "width": $('.card').width(),
+        "height": $('.card').height()
+    });
+    $(".card img").css({
+        "width": $('.card').width(),
+        "height": $('.card').height()
+    })
+
+}
+
