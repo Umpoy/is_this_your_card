@@ -1,11 +1,11 @@
 
 html, body {margin: 0; height: 100%; overflow: hidden}
 
-div {
+.container div {
     height: 50%;
     width: 50%;
-    /* border: 1px solid black;
-    box-sizing: border-box; */
+    border: 1px solid black;
+    box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
@@ -13,64 +13,38 @@ div {
 .container {
     height: 100vh;
     width: 100vw;
+    position: fixed;
 }
+
 
 .card {
-    position: fixed;
+    height: 50%;
+    width: 50%;
     top: 50%;
     left: 50%;
-    /* bring your own prefixes */
     transform: translate(-50%, -50%);
-}
-
-.card img {
-    height: 100%;
-    width: 100%;
-}
-
-.card .back {
-    height: 100%;
-    width: 100%;
     position: absolute;
 }
 
-.front {
-    height: 100%;
-    width: 100%;
+.card div {
     position: absolute;
 }
 
-.reveal {
-    height: 100%;
-    width: 100%;
+/* .front, .back {
+    height: 50%;
+    width: 50%;
     position: absolute;
-}
+} */
 
 .hide {
     visibility: hidden;
 }
 
-#heart{
+#heart, #club, .left{
     float: left;
 }
 
-#club{
-    float: left;
-}
-
-#spade{
-    float: right;
-}
-
-#diamond{
-    float: right;
-}
-
-.left {
-    float: left;
-}
-
-.right {
+#spade, #diamond, .right {
     float: right;
 }
 

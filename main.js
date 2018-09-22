@@ -4,7 +4,11 @@ $(document).ready(initialize);
 
 function initialize() {
     assign_click_handler();
-    call_first_card_image()
+    call_first_card_image();
+    resize_card();
+    $("div").on('click', function () {
+        console.log(this);
+    })
 }
 
 function assign_click_handler() {
@@ -79,4 +83,20 @@ function new_card() {
     second_click = null;
     call_first_card_image();
     $('.front').removeClass('hide');
+}
+
+function resize_card() {
+    $(".front").css({
+        "width": $('.card').width(),
+        "height": $('.card').height()
+    });
+    $(".back").css({
+        "width": $('.card').width(),
+        "height": $('.card').height()
+    });
+    $(".card img").css({
+        "width": $('.card').width(),
+        "height": $('.card').height()
+    })
+
 }
