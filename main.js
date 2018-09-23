@@ -62,7 +62,7 @@ function render_card() {
     $('.front').html(img);
     resize_card();
     //listen to shake event
-    var shakeEvent = new Shake({ threshold: 15 });
+    var shakeEvent = new Shake({ threshold: 20 });
     shakeEvent.start();
     window.addEventListener('shake', function () {
         $(".back").addClass('hide');
