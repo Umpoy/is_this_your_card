@@ -16,7 +16,7 @@ function assign_click_handler() {
     $('.back').on('click', function () {
         $(this).addClass('hide');
     })
-    $('.reveal').on('click', new_card)
+    //$('.reveal').on('click', new_card)
 }
 
 function find_value() {
@@ -29,7 +29,9 @@ function find_value() {
     }
     first_click = $(this).attr("id");
     console.log("first click: ", first_click);
-    console.log("second click: ", second_click)
+    console.log("second click: ", second_click);
+
+
 }
 
 function render_card() {
@@ -85,7 +87,7 @@ function render_card() {
 function new_card() {
     first_click = null;
     second_click = null;
-    call_first_card_image();
+    //call_first_card_image();
     $('.front').removeClass('hide');
 }
 
